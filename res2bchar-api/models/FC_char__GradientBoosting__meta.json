@@ -1,0 +1,31 @@
+{
+  "target": "FC_char",
+  "model_name": "GradientBoosting",
+  "features": [
+    "Temp",
+    "RT",
+    "HR",
+    "VM_bio",
+    "Ash_bio",
+    "FC_bio",
+    "C_bio",
+    "H/C_bio",
+    "O/C_bio",
+    "VM_to_Ash",
+    "FC_to_Ash",
+    "FC_bio_derived",
+    "O_bio_derived"
+  ],
+  "n_train": 253,
+  "best_params": {
+    "regressor__learning_rate": "0.04831101367003442",
+    "regressor__loss": "absolute_error",
+    "regressor__max_depth": "4",
+    "regressor__max_features": "sqrt",
+    "regressor__min_samples_leaf": "8",
+    "regressor__min_samples_split": "17",
+    "regressor__n_estimators": "468",
+    "regressor__subsample": "0.9817221202684954"
+  },
+  "saved_at": "2026-03-27T01:16:10.152677"
+}

@@ -1,0 +1,31 @@
+{
+  "target": "Yield_char",
+  "model_name": "CatBoost",
+  "features": [
+    "Temp",
+    "RT",
+    "HR",
+    "VM_bio",
+    "Ash_bio",
+    "FC_bio",
+    "H/C_bio",
+    "O/C_bio",
+    "VM_to_Ash",
+    "FC_to_Ash",
+    "FC_bio_derived",
+    "O_bio_derived"
+  ],
+  "n_train": 249,
+  "best_params": {
+    "regressor__bagging_temperature": "5.256901823026858",
+    "regressor__depth": "4",
+    "regressor__grow_policy": "Lossguide",
+    "regressor__iterations": "1304",
+    "regressor__l2_leaf_reg": "1.0883820060773413",
+    "regressor__learning_rate": "0.06739033466622768",
+    "regressor__min_data_in_leaf": "21",
+    "regressor__random_strength": "16.301088568049142",
+    "regressor__rsm": "0.648663527457704"
+  },
+  "saved_at": "2026-03-27T01:11:36.972864"
+}
