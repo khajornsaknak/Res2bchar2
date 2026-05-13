@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import Optional
 import joblib
+import pandas as pd
 import numpy as np
 import os
 
@@ -132,7 +133,7 @@ def predict_all(data: PredictionInput):
     for key, model in MODELS.items():
         try:
             feat_list = FEATURES[key]
-            X = np.array([[feats[f] for f in feat_list]])
+            X = pd.DataFrame([{f: feats[f] for f in feat_list}])
             pred = model.predict(X)[0]
             results[key] = round(float(pred), 4)
         except Exception as e:
@@ -160,7 +161,7 @@ def predict_single(target: str, data: PredictionInput):
 
     feats = derive_features(data)
     feat_list = FEATURES[target]
-    X = np.array([[feats[f] for f in feat_list]])
+    X = pd.DataFrame([{f: feats[f] for f in feat_list}])
 
     try:
         pred = MODELS[target].predict(X)[0]
