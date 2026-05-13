@@ -104,7 +104,7 @@ FEATURES = {
     "H_C_char": ['Temp','RT','HR','C_bio','H_bio','N_bio','Ash_bio','O_bio','H/C_bio','O/C_bio','FC_bio_derived','O_bio_derived'],
     "O_C_char": ['Temp','RT','HR','C_bio','H_bio','N_bio','Ash_bio','O_bio','H/C_bio','O/C_bio','FC_bio_derived','O_bio_derived'],
     "FC_char":  ['Temp','RT','HR','VM_bio','Ash_bio','FC_bio','C_bio','H/C_bio','O/C_bio','VM_to_Ash','FC_to_Ash','FC_bio_derived','O_bio_derived'],
-    "Yield":    ['Temp','RT','HR','C_bio','H_bio','N_bio','Ash_bio','O_bio','H/C_bio','O/C_bio','FC_bio_derived','O_bio_derived'],
+    "Yield":    "Yield": ['Temp','RT','HR','VM_bio','Ash_bio','FC_bio','C_bio','H/C_bio','O/C_bio','VM_to_Ash','FC_to_Ash','FC_bio_derived','O_bio_derived'],
 }
 
 
